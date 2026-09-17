@@ -1,0 +1,14 @@
+{
+  "name": "bls-otp-server",
+  "version": "1.0.0",
+  "description": "BLS OTP WebSocket Server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "imap": "^0.8.19",
+    "mailparser": "^3.6.5",
+    "ws": "^8.16.0"
+  }
+}
