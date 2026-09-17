@@ -41,7 +41,7 @@ wss.on('connection', function connection(ws) {
                         if (err) throw err;
 
                         function searchForOTP() {
-                            // 🔥 التعديل الأقوى: البحث عن أي رسالة جديدة غير مقروءة أياً كان مُرسلها!
+                            // 🔴 التعديل هنا: البحث عن أي رسالة جديدة فقط (UNSEEN) بدون تحديد اسم المُرسل
                             imap.search(['UNSEEN'], function(err, results) {
                                 if (err || !results || results.length === 0) return;
                                 
